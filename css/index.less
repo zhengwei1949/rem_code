@@ -1,0 +1,51 @@
+@import './fonts.less';
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #f7f4f1;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+.wrapper{
+    padding:0 24/100rem;
+    .title{
+        margin-top:28/100rem;
+        margin-bottom: 30/100rem;
+        h3{
+            float: left;
+            font-size:28/100rem;
+            font-weight: normal;
+            color: #000;
+        }
+        p{
+            float: right;
+            font-size:28/100rem;
+            color: #888;
+        }
+    }
+    .content{
+        height:218/100rem;
+        background-color: #fff;
+        border:3/100rem dashed #dedede;
+        text-align: center; 
+        span{
+            display: block;
+            color: #aeaeae;
+        }
+        span:first-of-type{
+            font-size:104/100rem;
+            padding-top:36/100rem;
+            padding-bottom: 16/100rem;
+        }
+        span:last-of-type{
+            font-size:26/100rem;
+        }
+    }
+}
